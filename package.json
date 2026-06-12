@@ -1,0 +1,20 @@
+{
+  "name": "vuna-calculator",
+  "version": "1.0.0",
+  "description": "VUNA Calculator — Babatunde Philip Olutayo. Unique features: Exponent and Hyperbolic Sine.",
+  "main": "assets/js/calculator.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint assets/js/script.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Babatunde Philip Olutayo",
+  "license": "MIT"
+}
