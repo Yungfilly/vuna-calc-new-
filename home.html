@@ -1,25 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Veritas University</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Philip Olutayo – Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+
+    .hero {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 42px; margin-bottom: 10px; }
+    .hero p { font-size: 20px; opacity: 0.85; margin-bottom: 8px; }
+    .badge {
+      display: inline-block;
+      background: white;
+      color: #2a5298;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-size: 15px;
+      margin-top: 16px;
+    }
+
+    .section { padding: 40px 20px; max-width: 860px; margin: auto; }
+    .section h2 {
+      font-size: 26px;
+      color: #1e3c72;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2a5298;
+      padding-bottom: 8px;
+    }
+
+    .about-text { font-size: 16px; line-height: 1.7; color: #444; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .skill-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #2a5298;
+    }
+
+    .project-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .project-card h3 { color: #1e3c72; margin-bottom: 6px; font-size: 18px; }
+    .project-card p { font-size: 14px; color: #555; line-height: 1.6; }
+
+    .tag {
+      display: inline-block;
+      background: #e8eef8;
+      color: #2a5298;
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin: 6px 4px 0 0;
+    }
+
+    .contact-list { list-style: none; font-size: 15px; line-height: 2; color: #444; }
+    .contact-list li span { color: #1e3c72; font-weight: bold; margin-right: 8px; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #888;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
-<body style="margin:0; font-family:Arial, sans-serif; background:#f4f4f4;">
+<body>
 
-    <div style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(to right, #1e3c72, #2a5298); color:white;">
-        
-        <h1 style="font-size:50px; margin-bottom:20px;">
-            Veritas University is Unique
-        </h1>
-        
-        <p style="font-size:22px; margin-bottom:30px;">
-            Excellence ~ Integrity ~ Innovation
-        </p>
-        
-        <p style="font-size:18px; background:white; color:#2a5298; padding:12px 25px; border-radius:8px;">
-            Created by Philip
-        </p>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Babatunde Philip Olutayo</h1>
+    <p>Software Engineering Student &middot; Veritas University, Abuja</p>
+    <p style="font-size:15px; opacity:0.7;">Excellence ~ Integrity ~ Innovation</p>
+    <div class="badge">Final Year Project Defense &mdash; 2025</div>
+  </div>
 
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>About Me</h2>
+    <p class="about-text">
+      I am a final-year Software Engineering student at Veritas University, Abuja
+      (Matric No: VUG/SEN/22/8575), supervised by Dr. Emmanuel Mkpoliogu.
+      My academic work focuses on applying machine learning to mobile health applications,
+      particularly in low-infrastructure settings across Nigeria and Africa.
+    </p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">React Native</div>
+      <div class="skill-card">Flask / Python</div>
+      <div class="skill-card">TensorFlow / Keras</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">HTML &amp; CSS</div>
+      <div class="skill-card">REST APIs</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">SQL / Databases</div>
     </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Water Guard (WaterHealthPredict)</h3>
+      <p>
+        A mobile application built with React Native (Expo) and a Flask REST API backend.
+        Uses a 1D CNN model trained in TensorFlow/Keras to predict cholera and typhoid fever
+        risk from water quality parameters. Achieved 88% model accuracy and a SUS usability score of 76.
+      </p>
+      <div>
+        <span class="tag">React Native</span>
+        <span class="tag">Flask</span>
+        <span class="tag">CNN</span>
+        <span class="tag">TensorFlow</span>
+        <span class="tag">Health Tech</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Phishing Attack Detection System</h3>
+      <p>
+        A plugin-based phishing detection tool using Google Gemini AI and Groq AI.
+        Built with a Chrome Extension frontend and Flask backend to identify and flag
+        phishing threats in real time.
+      </p>
+      <div>
+        <span class="tag">Chrome Extension</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Gemini AI</span>
+        <span class="tag">Groq AI</span>
+        <span class="tag">Cybersecurity</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li><span>Name:</span>Babatunde Philip Olutayo</li>
+      <li><span>Matric No:</span>VUG/SEN/22/8575</li>
+      <li><span>University:</span>Veritas University, Abuja</li>
+      <li><span>Department:</span>Software Engineering</li>
+      <li><span>Supervisor:</span>Dr. Emmanuel Mkpoliogu</li>
+    </ul>
+  </div>
+
+  <footer>
+    Created by Philip &mdash; Veritas University Final Year Defense &copy; 2025
+  </footer>
 
 </body>
 </html>
